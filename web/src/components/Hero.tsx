@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight, Flame, ShieldCheck, Truck, Sparkles } from 'lucide-react';
+import casaBatllo from '../assets/images/arquitectura-casa-batlo.jpg';
 
 interface HeroProps {
   onOpenCommission: () => void;
@@ -85,7 +86,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenCommission }) => {
             <div className="relative w-full max-w-md rounded-2xl p-4 bg-[#eae4d5] border-2 border-[#211d1a] shadow-xl">
               <div className="relative aspect-[3/4] rounded-xl overflow-hidden border border-[#211d1a]/20 bg-[#f7f4ed]">
                 <img
-                  src="/src/assets/images/arquitectura-casa-batlo.jpg"
+                  src={casaBatllo}
                   alt="Cerámica Yorokobu en gres con técnica cuerda seca"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
