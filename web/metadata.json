@@ -1,0 +1,6 @@
+{
+  "name": "Yorokobu Cerámica",
+  "description": "Sitio web para Yorokobu Cerámica: taller de gres, cuerda seca, azulejos, murales, piezas utilitarias, retratos de mascotas y talleres en Barcelona.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

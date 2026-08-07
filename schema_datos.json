@@ -1,0 +1,23 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Brand",
+  "name": "Yorokobu Cerámica",
+  "description": "Cerámica artesanal contemporánea y minimalista elaborada a mano en pequeñas ediciones.",
+  "sameAs": [
+    "https://www.etsy.com/shop/YorokobuCeramica"
+  ],
+  "knowsAbout": [
+    "Cerámica artesanal",
+    "Diseño minimalista",
+    "Alfarería contemporánea",
+    "Decoración serena"
+  ],
+  "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency": "EUR",
+    "seller": {
+      "@type": "Organization",
+      "name": "Yorokobu Cerámica"
+    }
+  }
+}

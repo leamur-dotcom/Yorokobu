@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+/* Definición de tema para Tailwind CSS v4 */
+@theme {
+  --color-cobalt: #34548d;
+  --color-ochre: #d99138;
+  --color-terracotta: #c35232;
+  --color-oxide: #486e58;
+  --color-paper: #f7f4ed;
+  --color-sand: #eae4d5;
+  --color-ink: #211d1a;
+
+  --font-sans: 'Work Sans', sans-serif;
+  --font-serif: 'Fraunces', serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+}
+
+@layer base {
+  body {
+    font-family: 'Work Sans', sans-serif;
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: 'Fraunces', serif;
+  }
+
+  .font-mono {
+    font-family: 'IBM Plex Mono', monospace;
+  }
+}
+
+/* Custom subtle ceramic texture overlay */
+.ceramic-texture {
+  background-image: radial-gradient(#211d1a 0.75px, transparent 0.75px);
+  background-size: 18px 18px;
+  opacity: 0.04;
+}
+
+/* Wax cord divider styling */
+.cord-line {
+  position: relative;
+  height: 3px;
+  background-color: var(--color-ink);
+  border-radius: 2px;
+}
+
+.cord-line::after {
+  content: '';
+  position: absolute;
+  top: -3px;
+  right: 15%;
+  width: 9px;
+  height: 9px;
+  background-color: var(--color-terracotta);
+  border: 2px solid var(--color-ink);
+  border-radius: 50%;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-paper);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-ochre);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-terracotta);
+}

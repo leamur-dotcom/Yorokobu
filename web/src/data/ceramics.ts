@@ -1,0 +1,260 @@
+import { CollectionItem, Workshop, Article, GlazePaletteOption } from '../types';
+import sagradaFamilia from '../assets/images/arquitectura-sagrada-familia.jpg';
+import retratoGato from '../assets/images/retrato-mascota-gato-heic.jpg';
+import esculturaJarron from '../assets/images/escultura-jarron_3.jpg';
+import cartelVilato from '../assets/images/cartel-vilato.jpg';
+import img6768 from '../assets/images/IMG_6768.jpg';
+import modeladoFrasco from '../assets/images/modelado-frasco.jpg';
+
+export const GLAZE_PALETTE: GlazePaletteOption[] = [
+  {
+    id: 'cobalt',
+    name: 'Azul Cobalto',
+    hex: '#34548d',
+    description: 'Óxido de cobalto intenso, acabado brillante mediterráneo.',
+  },
+  {
+    id: 'ochre',
+    name: 'Ocre Ámbar',
+    hex: '#d99138',
+    description: 'Tono cádiz cálido con destellos dorados tras la cocción.',
+  },
+  {
+    id: 'terracotta',
+    name: 'Terracota Arcilla',
+    hex: '#c35232',
+    description: 'Pigmento mineral terroso de alta saturación volcánica.',
+  },
+  {
+    id: 'oxide',
+    name: 'Verde Óxido',
+    hex: '#486e58',
+    description: 'Esmalte satinado teñido con carbonato de cobre.',
+  },
+  {
+    id: 'paper',
+    name: 'Blanco Gres',
+    hex: '#f7f4ed',
+    description: 'Base de cuarzo y caolín sin teñir, tono marfil satinado.',
+  },
+];
+
+export const COLLECTION_ITEMS: CollectionItem[] = [
+  {
+    id: 'azulejo-mural-mediterraneo',
+    title: 'Azulejos & Murales a Medida',
+    category: 'azulejos',
+    categoryLabel: 'Azulejos & Murales',
+    description: 'Composiciones a medida para fachadas, cocinas y paredes interiores. Cada azulejo se dibuja, se corta y se esmalta a mano, pieza a pieza.',
+    longDescription: 'Murales cerámicos creados mediante la técnica tradicional hispano-musulmana de cuerda seca sobre baldosas de gres crudo. El trazo de cera negra evita que los esmaltes fundidos se mezclen en el horno a 1220°C, dando como resultado relieve tangible y contornos nítidos.',
+    tag: 'Desde 1 azulejo',
+    priceFrom: 'Desde 40€ / pieza',
+    dimensions: 'Variables (Standard 15x15 cm, 20x20 cm o módulos a medida)',
+    firingTemp: '1220 °C (Apto para exterior e interior)',
+    image: sagradaFamilia,
+    badge: 'Más solicitado',
+    features: [
+      'Gres impermeabilizado de alta resistencia',
+      'Esmaltes minerales inalterables con el sol y la lluvia',
+      'Numeración en el reverso para facilitar la colocación',
+      'Boceto en acuarela previo para confirmación',
+    ],
+  },
+  {
+    id: 'retratos-mascotas-cuerda-seca',
+    title: 'Retratos Cerámicos de Mascotas',
+    category: 'mascotas',
+    categoryLabel: 'Retratos de Mascotas',
+    description: 'Tu gato o tu perro, traducido a líneas de cuerda seca sobre un azulejo. Un retrato eterno que se cuelga, no una foto que se guarda en el móvil.',
+    longDescription: 'Partimos de una o varias fotografías de tu mascota. Dibujamos su silueta adaptada al lenguaje gráfico del gres y la cuerda seca, resaltando sus rasgos distintivos con esmaltes vitrificados a alta temperatura.',
+    tag: 'A partir de una foto tuya',
+    priceFrom: '85€ / azulejo enmarcado',
+    dimensions: '15 x 15 cm o 20 x 20 cm',
+    firingTemp: '1220 °C',
+    image: retratoGato,
+    badge: 'Edición Regalo',
+    features: [
+      'Inscripción de nombre o fecha opcional',
+      'Marco de madera de roble listo para colgar incluido',
+      'Soporta humedad (ideal para baños, terrazas o salones)',
+      'Certificado de pieza única firmada a mano',
+    ],
+  },
+  {
+    id: 'utilitaria-volumetrica-vajilla',
+    title: 'Vajilla & Piezas Utilitarias',
+    category: 'utilitaria',
+    categoryLabel: 'Utilitaria & Volumétrica',
+    description: 'Platos, jarrones y objetos de mesa donde la función no le quita nada a la forma. Piezas únicas o series cortas numeradas.',
+    longDescription: 'Colección funcional diseñada para el uso diario o la mesa ceremonial. Cada cuenco, jarra o fuente se modela mediante plancha de gres y se decora individualmente con motivos botánicos o geométricos en cuerda seca.',
+    tag: 'Series cortas numeradas (3 a 12 piezas)',
+    priceFrom: 'Desde 38€ / pieza',
+    dimensions: 'Diámetros de 12cm a 32cm',
+    firingTemp: '1220 °C (Apto para lavavajillas y microondas)',
+    image: modeladoFrasco,
+    features: [
+      'Esmaltes atóxicos certificados aptos para uso alimentario',
+      'Estructura de gres vitrificado sin absorción de agua',
+      'Tacto terroso en la base y suave al tacto en el esmalte',
+      'Variaciones orgánicas de color típicas del horno de leña/gas',
+    ],
+  },
+  {
+    id: 'pop-culture-marcas-iconografia',
+    title: 'Pop Culture & Marcas',
+    category: 'marcas',
+    categoryLabel: 'Pop Culture & Marcas',
+    description: 'Iconografía, personajes y piezas de identidad para eventos, locales y coleccionistas. La técnica es tradicional; las referencias, no tienen por qué serlo.',
+    longDescription: 'Llevamos la nobleza de la cuerda seca a gráficos contemporáneos, logotipos comerciales, rótulos de hostelería o reinterpretaciones de la cultura pop y cómic sobre placas de cerámica artesanal.',
+    tag: 'Proyectos a medida para locales y marcas',
+    priceFrom: 'Presupuesto según proyecto',
+    dimensions: 'Desde placas de 10x10cm hasta murales de gran formato',
+    firingTemp: '1220 °C',
+    image: img6768,
+    features: [
+      'Desarrollo de prototipo previo en arcilla',
+      'Reproducción de colores corporativos en esmalte mineral',
+      'Resistencia a la intemperie para rótulos de entrada',
+      'Descuentos por volumen para eventos o merchandising de autor',
+    ],
+  },
+  {
+    id: 'rotulo-calle-numero-casa',
+    title: 'Cartelería para Empresas',
+    category: 'marcas',
+    categoryLabel: 'Cartelería & Marcas',
+    description: 'Rótulos cerámicos personalizados para fachadas, locales y negocios que quieren convertir su identidad en una pieza duradera.',
+    longDescription: 'Diseñamos logos, nombres y mensajes comerciales en cuerda seca sobre gres, con acabados resistentes para interiores y exteriores.',
+    tag: 'Logos y rótulos a medida',
+    priceFrom: 'Desde 65€',
+    dimensions: '20 x 10 cm / 20 x 20 cm',
+    firingTemp: '1220 °C (Resistente a heladas)',
+    image: cartelVilato,
+    features: [
+      'Adaptación de logotipo y tipografía de marca',
+      'Esmaltes resistentes al sol y la lluvia',
+      'Paleta de colores personalizada para tu negocio',
+    ],
+  },
+  {
+    id: 'jarron-volumetrico-cuerda-seca',
+    title: 'Jarrones & Vasijas de Autor',
+    category: 'utilitaria',
+    categoryLabel: 'Utilitaria & Volumétrica',
+    description: 'Esculturas funcionales de gres con acentos gráficos en cuerda seca. Piezas únicas que visten por sí solas cualquier estancia.',
+    longDescription: 'Modelado por placas y raspado a mano. La superficie combina la textura rústica del barro refractario chamotado con ventanas esmaltadas brillantes en cobalto y ocre.',
+    tag: 'Pieza única firmada',
+    priceFrom: '140€',
+    dimensions: 'Alto 28 cm x Ancho 16 cm',
+    firingTemp: '1220 °C',
+    image: esculturaJarron,
+    features: [
+      'Impermeable por dentro para flores frescas',
+      'Firmado e inscrito en la base con la fecha de hornada',
+      'Textura táctil única',
+    ],
+  },
+];
+
+export const WORKSHOPS: Workshop[] = [
+  {
+    id: 'taller-cuerda-seca-iniciacion',
+    title: 'Taller de Cuerda Seca (Iniciación)',
+    duration: '3 Horas · Monográfico',
+    price: 85,
+    description: 'Una sesión práctica para trazar tu primer cordón de cera, esmaltar dentro del límite y entender por qué esta técnica no perdona la prisa.',
+    details: [
+      'Aprenderás a transferir un dibujo al gres crudo',
+      'Preparación del cordón aislante con cera y pigmento negro',
+      'Aplicación de esmaltes con pera de esmaltar y pincel',
+      'Cocción incluida: te llevas tu azulejo de 15x15 cm horneado semanas después',
+    ],
+    includes: ['Barro gres', 'Esmaltes y herramientas', 'Cocción a 1220°C', 'Aperitivo y té en el estudio'],
+    upcomingDates: [
+      { date: 'Sábado 16 de Agosto · 10:30h', seatsLeft: 3 },
+      { date: 'Sábado 23 de Agosto · 16:00h', seatsLeft: 5 },
+      { date: 'Sábado 6 de Septiembre · 10:30h', seatsLeft: 2 },
+    ],
+  },
+  {
+    id: 'sesion-diseno-boceto',
+    title: 'Sesión de Diseño & Prototipado',
+    duration: '2 Horas · Intensivo',
+    price: 60,
+    description: 'Antes de tocar el barro, definimos boceto, paleta de esmaltes y formato. Ideal para piezas personalizadas o proyectos de marca.',
+    details: [
+      'Estudio de síntesis gráfica para técnica cuerda seca',
+      'Pruebas de color en muestrarios reales horneados',
+      'Escalado de patrones para mosaicos o murales',
+      'Ficha técnica y lista de esmaltes lista para llevar a cabo',
+    ],
+    includes: ['Muestrario de esmaltes', 'Papel de boceto profesional', 'Asesoría 1 a 1'],
+    upcomingDates: [
+      { date: 'Jueves 21 de Agosto · 18:00h', seatsLeft: 4 },
+      { date: 'Jueves 28 de Agosto · 18:00h', seatsLeft: 4 },
+    ],
+  },
+  {
+    id: 'acompaniamiento-interiorismo',
+    title: 'Acompañamiento de Proyecto',
+    duration: 'Personalizado',
+    price: 150,
+    description: 'Para arquitectos, interioristas y locales: medición del espacio, prueba de esmaltes y calendario de producción hasta la instalación.',
+    details: [
+      'Visita técnica o reunión virtual',
+      'Realización de muestra física a escala 1:1',
+      'Planificación de juntas e integración arquitectónica',
+      'Dirección de montaje o instalación directa en Barcelona',
+    ],
+    includes: ['Prototipo horneado de muestra', 'Presupuesto desglosado', 'Gestión de plazos'],
+    upcomingDates: [
+      { date: 'Bajo reserva personalizada', seatsLeft: 8 },
+    ],
+  },
+];
+
+export const ARTICLES: Article[] = [
+  {
+    id: 'como-nace-un-azulejo',
+    category: 'Proceso',
+    title: 'Cómo nace un azulejo: De la idea al horno',
+    date: '3 de Agosto, 2026',
+    readTime: '4 min de lectura',
+    summary: 'De la idea al horno: por qué el orden de los esmaltes cambia el resultado final, y qué se decide antes de encender el fuego.',
+    content: [
+      'El azulejo comienza en una plancha de gres amasa a mano para eliminar cualquier burbuja de aire que pudiera hacer estallar la pieza durante la primera cocción (el bizcochado).',
+      'Una vez seca la arcilla al tacto de cuero, lijamos los bordes y transferimos el dibujo con papel vegetal troquelado y polvo de carbón.',
+      'Aquí llega el momento clave: la cuerda seca. Trazamos un cordón compuesto de cera de abejas, aceite de linaza y óxido de manganeso. Este trazo repelente actúa como frontera infranqueable para los esmaltes líquidos.',
+      'Al meter la pieza en el horno a 1220°C, la cera se quema por completo sin dejar rastro, dejando al descubierto una fina línea de óxido oscuro mate que separa los campos de color brillante vitrificado.',
+    ],
+    quote: 'El fuego no borra la línea de cera; la convierte en sombra indeleble que enmarca el color.',
+  },
+  {
+    id: 'cuerda-seca-explicada',
+    category: 'Técnica',
+    title: 'Cuerda seca, explicada sin tecnicismos',
+    date: '28 de Julio, 2026',
+    readTime: '5 min de lectura',
+    summary: 'Qué hace exactamente el cordón de cera, por qué deja esa línea oscura y qué margen de error tolera un buen trazo.',
+    content: [
+      'Históricamente nacida en la Península Ibérica en el siglo X, la cuerda seca surgió para imitar el lujoso efecto de los alicatados de mosaico cortado a mano, pero sobre un solo azulejo plano.',
+      'Imagina dibujar un relieve con cera sobre un lienzo. Cuando viertes pintura de agua a cada lado, la cera repele la pintura impidiendo que se mezclen.',
+      'En cerámica, cada esmalte es una suspensión de minerales en agua. Si juntaras un esmalte azul cobalto y uno amarillo ocre sin barrera, durante la fundición a 1200 grados se derretirían juntos formando un verde turbio.',
+      'El cordón de cuerda seca crea una micro-tensión superficial que sostiene la gota de esmalte con volumen, dando esa sensación táctil esponjosa tan bonita.',
+    ],
+    quote: 'Es la técnica donde la precisión del dibujo sostiene la libertad vibrante de la química del fuego.',
+  },
+  {
+    id: 'disenar-para-un-espacio',
+    category: 'Encargos',
+    title: 'Diseñar para un espacio, no para una pantalla',
+    date: '15 de Julio, 2026',
+    readTime: '3 min de lectura',
+    summary: 'Cómo cambia una pieza según la luz, la distancia y el material que la rodea — y qué preguntamos antes de aceptar un encargo.',
+    content: [
+      'Una imagen en Instagram muestra un azulejo bajo luz de estudio estática. Pero una cocina o una fachada viva recibe la luz cambiando con las horas del día.',
+      'El esmalte de cuerda seca tiene micro-variaciones de grosor. Por la mañana, una luz rasante revela el relieve suave de las islas de color. Al mediodía, el cobalto refleja el cielo.',
+      'Por eso, antes de cada encargo a medida, pedimos fotos de la luz natural de la estancia, los materiales adyacentes (madera, microcemento, piedra) y el uso que recibirá.',
+    ],
+  },
+];
